@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    /* -ms-overflow-style: none; */
+    background-image: url("images/bg-intro-desktop.png");
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+    background-position: center;
+  
+}
+
+.main-container{
+    margin: 0 auto;
+    max-width: 1105px;
+    width: 90%;
+    /* height: 400px; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5rem;
+    grid-gap: 1.4rem; 
+}
+
+.main-info{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    color: white;
+}
+
+.main-info h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  
+  .main-info p {
+    font-weight: 400;
+    
+  }
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1.5rem;
+    
+}
+
+.top-button{
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid;
+    cursor: pointer;    
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1.3rem 4rem;
+    box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
+    font-size: 0.9rem;
+    width: 100%;
+}
+.top-button span {
+    font-weight: 400;
+}
+
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2.5rem 2.7rem;
+    box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
+    width: 100%;
+    
+
+}
+/* "Poppins", sans-serif; */
+.form-content .input-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+input {
+    padding:1.2rem;
+    border-style: solid;
+    border-color: hsl(246, 25%, 77%);
+    opacity: 0.8;
+    border-radius: 5px;
+    border-width: 1px;
+    font-family: "Poppins" sans-serif;
+    padding-left: 1rem;
+
+  }
+
+  input:focus-visible {
+    border: 1px solid hsl(248, 32%, 49%);
+    outline: none;
+    outline-width: 1px;
+    outline-style: solid;
+  }
+
+  input::placeholder {
+    font-family: "Poppin" sans-serif; 
+    font-style:normal; 
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  .name-label{
+    text-align: right;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: hsl(0, 100%, 74%) ;
+    font-style: italic;
+  }
+
+ .last-name-label{
+    text-align: right;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+  }
+
+ .email-label{
+    text-align: right;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: hsl(0, 100%, 74%) ;
+    font-style: italic;
+  }
+
+ .pass-word-label {
+  text-align: right;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: hsl(0, 100%, 74%) ;
+  font-style: italic;
+ }
+
+ .success-msg{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: hsl(154, 59%, 51%);
+    font-style: italic;
+  }
+
+  .first-name-error-message,
+  .last-name-error-message,
+  .email-name-error-message,
+  .pass-word-error-{
+  display: none;
+  right: 3%;
+  top: 25%;
+  position: absolute;
+  align-items: right;
+  background-image: url("images/icon-error.svg");
+  background-repeat: no-repeat;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.submit-info {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .submit-info:hover {
+    background: hsl(154, 67%, 60%);
+    opacity: 0.7;
+    transition: all ease-in-out 0.3s;
+ } 
+ 
+
+  .terms{
+    color:hsl(246, 25%, 77%);
+    font-size: 0.6rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .terms a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+    
+  }
+
+  .attribution { 
+    font-size: 0.6rem; 
+    text-align: center; 
+    justify-items: center;
+  }
+  .attribution a {
+     color: hsl(228, 45%, 44%);
+  }
+
+ 
+@media screen and (max-width: 801px) {
+   
+    body{
+
+        background-image: url("images/bg-intro-mobile.png");
+
+    }
+
+    .main-container{
+      grid-template-columns: 1fr;
+      margin-bottom: 2rem;
+      gap: 1rem; 
+    }
+
+    .main-info{
+      height: 40vh;
+      gap: 2rem;
+      text-align: center;
+      padding: 1rem;
+      
+    }
+    .main-info h1 {
+      font-size: 2.2rem;
+    }
+
+    .top-button{ 
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 1.3rem 4rem;
+      line-height: 1.5rem;
+      
+  }
+  .top-button span {
+      font-weight: 200;
+  }
+
+  .form-section{
+        text-align: center;
+
+      }
+  .terms{
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-align: center;
+    }
+    
+
+ }

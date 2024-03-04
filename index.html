@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Intro component with sign up form</title>
+</head>
+
+
+<body>
+
+  <main class="main-container">
+      <section class="main-info">
+      <h1> Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+     </section>
+
+     <section class="form-section">
+      <button class="top-button">Try it free 7 days <span> then $20/mo. thereafter</span></button>
+
+      <form class="form-content">
+
+       <div class="input-area">
+          <input class="first-name" id="first-name" type="text" placeholder="First Name">
+          <div class="first-name-error-message"></div>
+          <label for="first-name" class="name-label"></label>
+        </div>
+       
+
+        <div class="input-area">
+          <input class="last-name" type="text" placeholder="Last Name">
+          <div class="last-name-error-message"></div>
+          <label for="last-name" class="last-name-label"></label>
+        </div>
+    
+
+       <div class="input-area">
+         <input class="email-address"  type="email" placeholder="Email Address">
+         <div class="email-error-message"></div>
+         <label for="email-name" class="email-label"></label>
+       </div>
+   
+
+      <div class="input-area">
+        <input class="pass-word" type="password" placeholder="Password">
+        <div class="pass-word-error"></div>
+        <label for="pass-word" class="pass-word-label"></label>
+      </div>
+ 
+      <div class="input-area">
+        <button class="submit-info" id="submit-info" type="submit">Claim your free trial</button>
+        <label for="submit-info" class="success-msg"></label>
+      </div>
+
+      
+      <label class="terms" for="submit-info"> By clicking the button, you are agreeing to our <a href="">Terms and 
+        Services</a> </label>
+      
+    </form>
+
+     </section>
+
+     <footer>
+      <p class="attribution">
+       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+       Coded by <a href="#">Queensley Iniedu</a>.
+      </p>
+      </footer>
+ </main>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="app.js" charset="UTF-8"></script>
+</body>
+</html>
