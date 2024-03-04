@@ -27,7 +27,7 @@ body{
     /* height: 400px; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 5rem;
+    margin-top: 3.5rem;
     grid-gap: 1.4rem; 
 }
 
