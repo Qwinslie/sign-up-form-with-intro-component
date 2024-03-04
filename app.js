@@ -35,12 +35,12 @@
       }
       if (userFirstName.val().length > 0) {
         nameLabel.text("");
-        userFirstName.css("border-color", "hsl(246, 25%, 77%)");
+        userFirstName.css("border-color", "hsl(154, 59%, 51%)");
         FirstNameErrorMessage.css("display", "none");
       }
       if (userLastName.val().length > 0) {
         lastNameLabel.text("");
-        userLastName.css("border-color", "hsl(246, 25%, 77%)");
+        userLastName.css("border-color", "hsl(154, 59%, 51%)");
         lastNameErrorMessage.css("display", "none");
       }
       if (userEmail.val().length === 0) {
@@ -55,7 +55,7 @@
       }
       if (userEmail.val().match(emailValidation)) {
         emailLabel.text("");
-        userEmail.css("border-color", "hsl(246, 25%, 77%)");
+        userEmail.css("border-color", "hsl(154, 59%, 51%)");
         emailErrorMessage.css("display", "none");
       }
       if (userPassword.val().length === 0) {
@@ -70,7 +70,7 @@
       }
       if (userPassword.val().match(passValidation)) {
         passwordLabel.text("");
-        userPassword.css("border-color", "hsl(246, 25%, 77%)");
+        userPassword.css("border-color", "hsl(154, 59%, 51%)");
         passwordError.css("display", "none");
       }
       if (
@@ -88,6 +88,19 @@
     submitBtn.click(function(event) {
       event.preventDefault();
       errorFunction();
-    });
-  });
+    
+
+  // Collect the form data
+  const formData = {
+    firstName: userFirstName.val(),
+    lastName: userLastName.val(),
+    email: userEmail.val(),
+    password: userPassword.val()
+  };
+
+  // Log the collected form data to the console
+  console.log(formData);
+});
+});
+
 
